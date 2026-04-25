@@ -1,6 +1,6 @@
 # 📁 Module HTML / CSS / JavaScript
-> Formation Dev Data — Orange Digital Center (ODC) Dakar  
-> Étudiant : Abdoulaye DJIGO
+> Formation Developpement Data — Orange Digital Center (ODC) Dakar  
+> Apprenant : Abdoulaye DJIGO
 
 ---
 
