@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice6</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="conteneur">
+        <div class="colonne">Gestion des Apprenants
+            <h2>Apprenants DEV DATA</h2>
+            <label for="nom"> Nom:
+                <input type="text" id="nom"><br><br>
+            </label>
+            <label for="prenom">Prenom:
+                <input type="text" id="prenom">
+            </label><br><br>
+            <button id="bouton1">
+                Ajouter Apprenant
+            </button>
+            <ol id="listesapprenants"></ol>
+        </div>
+
+        <div class="colonne">Gestion des Taches
+            <h2>Taches</h2>
+            <label for="apprenant">Choisir un Apprenant:
+                <select id="selectapprenant"></select>
+            </label> <br><br>
+            <label for=""> Tache:
+                <input type="text" id="tache">
+            </label><br><br>
+            <button id="bouton2"> 
+                ajouter une tache
+            </button>
+            <ol id="listestaches"></ol>
+        </div>
+
+        <div class="colonne">
+            <h3>Apprenants archivés</h3>
+            <ul id="listeArchives"></ul>
+        </div>
+    </div>
+</body>
+</html>

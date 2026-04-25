@@ -1,0 +1,11 @@
+
+/* La carte qui contient tout le formulaire */
+#contenu {
+    width: 80%;           /* largeur = 80% de l'élément parent */
+    max-width: 500px;     /* ne dépasse jamais 500px (même si 80% est plus grand) */
+    margin: 50px auto;    /* 50px en haut/bas, auto à gauche/droite = centré */
+    border: 2px solid grey;   /* bordure grise de 2px */
+    background-color: aqua;   /* fond de couleur aqua */
+    padding: 20px;        /* espace intérieur entre la bordure et le contenu */
+    border-radius: 15px;  /* coins arrondis (15px) */
+}

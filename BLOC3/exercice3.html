@@ -1,0 +1,69 @@
+<!--Exercice 3 
+Créer un formulaire : 
+• nom (chaine) 
+• âge (entier) 
+• sexe (bouton radio Homme/Femme) 
+• loisir (cage a cocher, plusieurs choix) 
+• pays (lites déroulante un choix) 
+• commentaire (Texte) 
+Au clic sur envoyer : 
+• afficher les données saisies 
+• vérifier que les champs ne sont pas vides-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Exercice 3</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="Formulaire" >
+        <form action="">
+    
+            <label for="Nom">Nom: 
+                <input type="text" id="nom">
+            </label>
+            <label for="Prenom">Prenom: 
+                <input type="text" id="prenom">
+            </label>
+            <br>
+            <label for="Age">Age: 
+                <input type="number" id="age">
+            </label>
+            <br>
+            <label for="Sexe">Sexe: 
+                <input type="radio" name="Sexe" value="Homme">Homme 
+                <input type="radio" name="Sexe" value="Femme"> Femme 
+            </label>
+            <br>
+            <label for="Loisir">Loisir: 
+                <input type="checkbox" name="Loisir" value="Sport">Sport 
+                <input type="checkbox" name="Loisir" value="Musique">Musique
+                <input type="checkbox" name="Loisir" value="Lecture">Lecture
+                <input type="checkbox" name="Loisir" value="Danse">Danse
+            </label> 
+            <br>
+            <label for="pays">Pays:
+                <select name="pays" id="pays">
+                    <option value="Senegal">Senegal </option>
+                    <option value="France">France</option>
+                    <option value="USA">Etats-Unis</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                </select>
+            </label>
+            <br>
+            <label for="commentaire">Commentaire :</label><br>
+                <textarea name="commentaire" id="commentaire" rows="6" cols="30"></textarea>
+            <br>
+            <button id="bouton">
+                Soumettre
+            </button>
+        </form>
+    </div>
+</body>
+</html>

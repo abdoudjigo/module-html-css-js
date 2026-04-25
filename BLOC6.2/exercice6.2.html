@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice6.2</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans"></body>
+    <header class="bg-gray-900 text-white text-center py-6 shadow-md">
+        <h1 class="text-3xl font-bold tracking-wide">Gestionnaire de Tâches (TO-DO-LIST)</h1>
+    </header>
+    <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section class="bg-white rounded-2xl shadow p-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Utilisateurs</h2>
+            <form id="form-user" class="flex flex-col gap-3 mb-6">
+                <input type="text" id="input-prenom" placeholder="Prénom" 
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <input type="text" id="input-nom" placeholder="Nom"
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <input type="email" id="input-email" placeholder="Email"
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <button type="submit"   
+                    class="bg-blue-600 text-white rounded-lg py-2 font-semibold hover:bg-blue-700 transition">
+                    Ajouter
+                </button>
+        </form>
+            <div id="liste-users" class="flex flex-col gap-3"></div>
+        </section>
+        
+        <section class="bg-white rounded-2xl shadow p-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Tâches</h2>
+            <form id="form-tache" class="flex flex-col gap-3 mb-4">
+                <input type="text" id="input-tache" placeholder="Titre de la tâche"
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+                <select id="select-user"
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+                    <option value="">-- Choisir un utilisateur --</option>
+                </select>
+                <button type="submit"
+                    class="bg-purple-600 text-white rounded-lg py-2 font-semibold hover:bg-purple-700 transition">
+                    Ajouter
+                </button>
+            </form>
+            <select id="filtre-user"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none">
+                <option value="">Tous les utilisateurs</option>
+            </select>
+            <div id="liste-taches" class="flex flex-col gap-3"></div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6.1</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>DEV DATA — Suivi des Apprenants</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Apprenants</h2>
+            <form id="form-apprenant">
+                <label for="input-prenom">Prénom : <input type="text" id="input-prenom" placeholder="Prénom"></label>
+                <label for="input-nom">Nom : <input type="text" id="input-nom" placeholder="Nom"></label>
+                <label for="input-email">Email : <input type="email" id="input-email" placeholder="Email"></label>
+                <button type="submit">Ajouter</button>
+            </form>
+            <div id="liste-apprenants"></div>
+        </section>
+        <section>
+            <h2>Livrables</h2>
+            <form id="form-livrables">
+                <label for="input-titre">Titre du livrable : <input type="text" id="input-titre" placeholder="Titre du livrable"></label>
+                <select id="select-type">
+                    <option value="">-- Type de livrable --</option>
+                    <option value="presentation">Présentation</option>
+                    <option value="expose">Exposé</option>
+                    <option value="veille">Veille</option>
+                    <option value="certification">Certification</option>
+                </select>
+                <select id="select-apprenant">
+                    <option value="">-- Choisir un apprenant --</option>
+                </select>
+                <button type="submit">Ajouter</button>
+            </form>
+            <div class="filtres">
+                <select id="filtre-apprenant">
+                    <option value="">Tous les apprenants</option>
+                </select>
+                <select id="filtre-type">
+                    <option value="">Tous les types</option>
+                    <option value="presentation">Présentation</option>
+                    <option value="expose">Exposé</option>
+                    <option value="veille">Veille</option>
+                    <option value="certification">Certification</option>
+                </select>
+            </div>
+            <div id="liste-livrables"></div>
+        </section>
+    </main>
+</body>
+</html>
